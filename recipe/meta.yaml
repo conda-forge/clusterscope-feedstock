@@ -1,5 +1,5 @@
 {% set name = "clusterscope" %}
-{% set version = "0.0.8" %}
+{% set version = "0.0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/clusterscope-{{ version }}.tar.gz
-  sha256: c0162ae304b65ec1f61943a01c67a1b96d1cb90c12d1040ec5ddab197dae55bb
+  sha256: c6f66ded4c1329ee6f42c2b91bd05217f22a7d09757c41d040a3dbd7e7ddddcb
 
 build:
   entry_points:
