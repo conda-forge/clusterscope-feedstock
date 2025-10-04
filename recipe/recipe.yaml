@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: clusterscope
-  version: "0.0.20"
+  version: 0.0.22
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/clusterscope-${{ version }}.tar.gz
-  sha256: 309f2b5930338ad40314af0d89e587067fa131ad7c39499e3d6319a43570b19c
+  sha256: f2cd570f54bee0a2b532886fc82988d330a2968176af1480fc9c5d137aae09bc
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - click >=8.0.0
+    - click >=8.0.0,!=8.3.0
 tests:
   - python:
       imports:
