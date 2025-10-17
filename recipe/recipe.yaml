@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: clusterscope
-  version: "0.0.27"
+  version: "0.0.28"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/clusterscope-${{ version }}.tar.gz
-  sha256: 4dba8d4ca634609ed8b36505f1575b325a675fcd681d61456d92322fd10b849d
+  sha256: a8313bf32f81e2f5f56bfc8549f31fa4dae4a492680045e506884b8f7b94c58c
 
 build:
   number: 0
